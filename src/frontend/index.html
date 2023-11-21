@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beagle</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="browser">
+        <img src="../../beagle_logo.png" alt="Logo" class="logo">
+        <input type="text" class="search-bar" placeholder="Describe the image you are searching for." onkeydown="search(event)">
+        <div id="search-results" class="grid-container"></div>
+    </div>
+
+    <div id="image-popup" onclick="closePopup()">
+        <img id="popup-img" src="" alt="Full size image">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
