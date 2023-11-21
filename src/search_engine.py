@@ -22,6 +22,6 @@ class SearchEngine:
             raise Exception("Tensors are on different devices")
 
         if self.similarity_metric == "cos":
-            return F.cosine_similarity(t1, t2, dim=1)
+            return F.cosine_similarity(t1, t2, dim=1).item()
         else:
             raise Exception("Unsupported similarity measure")
