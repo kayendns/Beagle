@@ -6,7 +6,7 @@ import numpy as np
 class DatabaseManager:
     def __init__(self, db_path='embeddings.db'):
         self.db_path = db_path
-        self.conn = sqlite3.connect(self.db_path)  # Persistent connection
+        self.conn = sqlite3.connect('database.db', check_same_thread=False)  # Persistent connection
         self._initialize_db()
         self.cleanup_database()
 
