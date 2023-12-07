@@ -1,4 +1,4 @@
-# Beagle
+# Beagle[DEPRECATED]*
 
 A tool for finding what you are looking for.
 
@@ -14,10 +14,6 @@ This way, a user can search for one of his images semantically.
 
 ![How Beagle looks in action](demo.png)
 
-## Roadmap
-- Implement GUI
-    - Add basic web front end ✔️
-    - Add slidebar for filtering by similarity ☐
-- Pagination for results ☐
-- Play around with other embedders ☐
-- Try other similarity measures ☐
+
+* I am currently working on rewriting the main search-logic and the indexing of data in Rust. The long term goal is to have a local semantic search engine, which allows the user to semantically search documents / sentences in documents, images, pdfs etc.
+
